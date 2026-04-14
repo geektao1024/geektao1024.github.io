@@ -1,24 +1,10 @@
-# geektao.github.io
+# geektao1024.github.io
 
-`GeekTao 工作室` 的 GitHub Pages 主页仓库。
+`GeekTao 工作室` 的 GitHub Pages 用户站点仓库。
 
-## 重要说明
+当前根地址：
 
-你当前创建的仓库名是 `geektao.github.io`，仓库所有者是 `geektao1024`。
-
-按 GitHub Pages 官方规则：
-
-- 用户站点仓库必须命名为 `<owner>.github.io`
-- 也就是如果你想要根地址 `https://geektao1024.github.io/`
-- 仓库名应该是 `geektao1024.github.io`
-
-所以当前这个仓库默认更像“项目站点”，发布地址通常会是：
-
-- `https://geektao1024.github.io/geektao.github.io/`
-
-如果你就是想做成类似 `rokcso.github.io` 这种根级 GitHub 二级域名站点，建议把仓库改名为：
-
-- `geektao1024.github.io`
+- `https://geektao1024.github.io/`
 
 ## 当前仓库包含
 
@@ -54,4 +40,3 @@
 - 现有网站矩阵
 - 后续静态工具入口
 - GitHub Pages 路径说明
-
