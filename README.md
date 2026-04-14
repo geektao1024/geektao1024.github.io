@@ -1,42 +1,61 @@
 # geektao1024.github.io
 
-`GeekTao 工作室` 的 GitHub Pages 用户站点仓库。
+The GitHub Pages repository for **GeekTao Studio**.
 
-当前根地址：
+Primary site:
 
-- `https://geektao1024.github.io/`
+- [GeekTao Studio homepage](https://geektao1024.github.io/)
 
-## 当前仓库包含
+## Studio Network
 
-- `index.html`：GeekTao 工作室首页
-- `styles.css`：全站样式
-- `404.html`：自定义 404 页面
-- `tools/starter/index.html`：示例工具页
-- `.nojekyll`：禁用 GitHub Pages 默认 Jekyll 构建
+The following external links use descriptive, concise anchor text so visitors and search engines can understand each destination before clicking.
 
-## 新增工具的推荐结构
+- [ClaudeCode101: Chinese Claude Code tutorials and workflows](https://claudecode101.com/)  
+  Focused on Claude Code tutorials, practical workflows, and AI-assisted development guidance. `claudecode101.com`
 
-1. 在 `tools/` 下创建目录，例如 `tools/json-viewer/`
-2. 把工具页面和静态资源放进该目录
-3. 在 `index.html` 的站点或工具区补一个入口链接
-4. 推送到 `main`
+- [DeepSeek Hubs: topical discovery platform for DeepSeek content](https://deepseekhubs.com/)  
+  Built for DeepSeek-related discovery, topic organization, and future product expansion. `deepseekhubs.com`
 
-## GitHub Pages 设置
+- [Learn Cursor: onboarding guides and workflow training for Cursor users](https://learn-cursor.com/)  
+  Covers setup, core features, use cases, and workflow improvements for Cursor. `learn-cursor.com`
 
-在仓库设置里确认：
+- [Musikalis: AI music creation and soundtrack generation](https://musikalis.com/)  
+  An AI music product site for songwriting, soundtrack workflows, and creative audio production. `musikalis.com`
+
+- [Suno AI Musical: Suno-based music creation workflows and use cases](https://sunoaimusical.com/)  
+  Focused on Suno-driven music creation, production workflows, and AI music use cases. `sunoaimusical.com`
+
+## Repository Structure
+
+- `index.html`: GeekTao Studio homepage
+- `styles.css`: shared site styles
+- `404.html`: custom 404 page
+- `tools/starter/index.html`: starter lab page for new static tools
+- `.nojekyll`: disables default Jekyll processing on GitHub Pages
+
+## Adding a New Tool
+
+1. Create a new folder under `tools/`, for example `tools/json-viewer/`
+2. Add the tool page and its static assets to that folder
+3. Add a relevant internal link from `index.html`
+4. Push to `main`
+
+## GitHub Pages Settings
+
+Confirm the following in the repository settings:
 
 1. `Settings`
 2. `Pages`
 3. `Build and deployment`
-4. `Source` 选择 `Deploy from a branch`
-5. `Branch` 选择 `main`
-6. Folder 选择 `/ (root)`
+4. `Source`: `Deploy from a branch`
+5. `Branch`: `main`
+6. Folder: `/ (root)`
 
-## 站点定位
+## Site Role
 
-这个首页已经调整成类似 `rokcso.github.io` 的独立工作室风格，用来展示：
+This site serves as the main entry point for GeekTao Studio and is used to present:
 
-- GeekTao 工作室品牌
-- 现有网站矩阵
-- 后续静态工具入口
-- GitHub Pages 路径说明
+- the studio brand
+- the portfolio of live projects
+- future lightweight tools and experiments
+- a stable homepage for ongoing expansion
