@@ -1,0 +1,287 @@
+:root {
+  --bg: #f5f0e7;
+  --panel: #fffdf8;
+  --text: #1f1b17;
+  --muted: #625a50;
+  --border: #d4c9ba;
+  --accent: #af4f28;
+  --accent-soft: rgba(175, 79, 40, 0.08);
+  --shadow: 8px 8px 0 rgba(120, 97, 72, 0.16);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171411;
+    --panel: #1e1a16;
+    --text: #f0e7da;
+    --muted: #b8ab9b;
+    --border: #504538;
+    --accent: #ff9b67;
+    --accent-soft: rgba(255, 155, 103, 0.08);
+    --shadow: 8px 8px 0 rgba(0, 0, 0, 0.34);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px;
+  color: var(--text);
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.75;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.5), transparent 24%),
+    linear-gradient(180deg, var(--bg), var(--bg));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+code {
+  padding: 0 0.28rem;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.page {
+  width: min(920px, 100%);
+  margin: 0 auto;
+}
+
+.container {
+  margin-bottom: 20px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  background: var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.brand {
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.nav-links a:hover,
+.inline-links a:hover,
+.project-card h2 a:hover,
+.button-link:hover {
+  color: var(--accent);
+}
+
+.micro,
+.announcement-label,
+.section-title,
+.badge {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+}
+
+.micro,
+.announcement-label,
+.section-title {
+  color: var(--accent);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "Noto Serif SC", serif;
+  line-height: 1.12;
+}
+
+h1 {
+  margin-top: 12px;
+  font-size: clamp(2.8rem, 7vw, 4.9rem);
+}
+
+.slogan {
+  max-width: 50ch;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+.announcement {
+  background:
+    linear-gradient(135deg, var(--accent-soft), transparent 68%),
+    var(--panel);
+}
+
+.announcement p {
+  margin: 12px 0 0;
+}
+
+.inline-links,
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 18px;
+}
+
+.inline-links a {
+  text-decoration: underline;
+  text-decoration-color: rgba(175, 79, 40, 0.4);
+  text-underline-offset: 3px;
+}
+
+.section-title {
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.mini-card {
+  padding: 18px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent);
+}
+
+.mini-card h2 {
+  font-size: 1.28rem;
+  margin-bottom: 10px;
+}
+
+.mini-card p,
+.project-card p,
+.footnote,
+.section p {
+  color: var(--muted);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  padding: 20px;
+  border: 1px solid var(--border);
+  background:
+    linear-gradient(135deg, rgba(175, 79, 40, 0.04), transparent 58%),
+    var(--panel);
+}
+
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid rgba(175, 79, 40, 0.24);
+  color: var(--accent);
+  background: rgba(175, 79, 40, 0.08);
+}
+
+.badge-muted {
+  color: var(--muted);
+  border-color: var(--border);
+  background: transparent;
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+}
+
+.project-card h2 a {
+  text-decoration: underline;
+  text-decoration-color: rgba(175, 79, 40, 0.34);
+  text-underline-offset: 4px;
+}
+
+.project-card p {
+  margin-bottom: 0;
+}
+
+.button-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid rgba(175, 79, 40, 0.28);
+  color: var(--accent);
+  background: rgba(175, 79, 40, 0.06);
+}
+
+.button-link-muted {
+  color: var(--muted);
+  border-color: var(--border);
+  background: transparent;
+}
+
+.footnote {
+  margin-top: 18px;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 760px) {
+  body {
+    padding: 14px;
+  }
+
+  .container {
+    padding: 22px;
+  }
+
+  .topbar,
+  .philosophy-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .topbar {
+    display: flex;
+  }
+
+  .nav-links {
+    gap: 8px 14px;
+  }
+}
+
